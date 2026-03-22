@@ -103,7 +103,9 @@ app.use("/listings",listingsRoute);
 app.use("/listings/:id/reviews",reviewsRoute);
 app.use("/",userRoute);
 
-
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+})
 
 
 // app.get("/testListing", async (req,res)=>{
