@@ -1,4 +1,4 @@
-<% if(successMsg && successMsg.length){%>
+<% if(locals.successMsg && locals.successMsg.length){%>
     <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
         <%=successMsg%>
         <button type="button"
@@ -7,7 +7,7 @@
         aria-label="close"></button>
     </div>
 <%}%>
-<% if(errorMsg && errorMsg.length){%>
+<% if(locals.errorMsg && locals.errorMsg.length){%>
     <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
         <%=errorMsg%>
         <button type="button"
